@@ -6,9 +6,7 @@ workflows:
     jobs:
       build:
         docker:
-          - image: circleci/node:12.18.3
-
-        working_directory: ~/repo
+          - image: circleci/node:12
 
         steps:
           - checkout
@@ -17,7 +15,9 @@ workflows:
                 - v1-dependencies-{{ checksum "package.json" }}
                 - v1-dependencies-
 
-          - run: npm install
+          - run: 
+              name: Install
+              command: npm install 
 
           - save_cache:
               paths:
