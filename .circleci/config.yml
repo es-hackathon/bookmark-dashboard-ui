@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  welcome: bookmark-dashboard-ui/welcome-orb@0.4.1
+  welcome: circleci/welcome-orb@0.4.1
 workflows:
   push:
     jobs:
