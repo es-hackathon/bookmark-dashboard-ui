@@ -1,0 +1,16 @@
+version: 2.1
+orbs:
+  welcome: bookmark-dashboard-ui/welcome-orb@0.4.1
+workflows:
+  push:
+    jobs:
+      - react/install
+      - react/eslint:
+          requires:
+            - react/install
+      - react/test:
+          requires:
+            - react/install
+      - react/coverage:
+          requires:
+            - react/install
