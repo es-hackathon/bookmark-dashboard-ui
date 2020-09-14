@@ -19,7 +19,7 @@
   <h3 align="center">Bookmark Dashboard UI (via React)</h3>
 
   <p align="center">
-    Dashboard which help to bookmark URL based on to group in terms of tribes, feature teams, platforms or application
+    Bookmark-Dashboard which help to bookmark URL based on to group in terms of tribes, feature teams, platforms or application
     <br />
     <a href="https://github.com/es-hackathon/bookmark-dashboard-ui"><strong>Explore the docs »</strong></a>
     <br />
@@ -44,12 +44,3 @@
 
 Getting Started
 
-```html
-  <widget-card title="Github" description="GitHub, Inc. is an American multinational corporation that provides 
-     hosting for software development and version control using Git. 
-     It offers the distributed version control and source code management functionality 
-     of Git, plus its own features" 
-     url="https://github.com/Amitpnk"
-     icon="bookmark"
-     date-modified="12 Sep 2020" >
-```
