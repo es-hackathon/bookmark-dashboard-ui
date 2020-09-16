@@ -1,5 +1,6 @@
 <!--BadgesSTART-->
 
+![Node.js Package](https://github.com/es-hackathon/bookmark-dashboard-ui/workflows/Node.js%20Package/badge.svg)
 [![CircleCI Status](https://circleci.com/gh/es-hackathon/bookmark-dashboard-ui.svg?style=shield&circle-token=6df5acd14909e633af370a9ff340ef68a6433351)](https://app.circleci.com/pipelines/github/es-hackathon/bookmark-dashboard-ui)
 [![react version](https://img.shields.io/badge/react-v16.3.1-blue)](https://www.npmjs.com/package/react)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/es-hackathon/bookmark-dashboard-ui/blob/develop/LICENSE)
