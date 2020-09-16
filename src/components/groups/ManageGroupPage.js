@@ -103,7 +103,7 @@ ManageGroupPage.propTypes = {
 }
 
 export function getGroupBySlug(groups, id) {
-    return groups.find(group => group.id === +id) || null;
+    return groups.find(group => group.id === id) || null;
 }
 
 function mapStateToProps(state, ownProps) {

@@ -7,7 +7,7 @@ import Spinner from "../common/Spinner";
 import { toast } from "react-toastify";
 
 const newCard = {
-    id: null,
+    id: "",
     name: "",
     description: "",
     url: "",
@@ -96,7 +96,7 @@ ManageCardPage.propTypes = {
 }
 
 export function getCardById(cards, id) {
-    return cards.find(card => card.id === +id) || null;
+    return cards.find(card => card.id === id) || null;
 }
 
 function mapStateToProps(state, ownProps) {
