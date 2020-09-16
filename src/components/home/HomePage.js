@@ -13,10 +13,8 @@ const HomePage = () => {
         const fetchItems = async () => {
             setIsLoading(true)
             const result = await axios(
-                `https://www.breakingbadapi.com/api/characters?name=${query}`
+                `https://bookmarkwebapi20200916112033.azurewebsites.net/api/v1/cards`
             )
-
-
             setItems(result.data)
             setIsLoading(false)
         }
