@@ -63,7 +63,6 @@ GroupsPage.propTypes = {
 }
 
 function mapStateToProps(state) {
-    debugger;
     return {
         groups:
             state.cards.length === 0

@@ -22,7 +22,6 @@ const GroupForm = ({
     // }, [startDate]);
 
     function onSelect(event) {
-        debugger;
         const id = event.map(x => x.id)
 
         group.cards = id;

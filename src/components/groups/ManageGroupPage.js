@@ -46,7 +46,6 @@ function ManageGroupPage({
     }, [props.group]);
 
     function handleChange(event) {
-        debugger;
         const { name, value } = event.target;
         setGroup(prevGroup => ({
             ...prevGroup,
