@@ -31,7 +31,7 @@ const HomePage = () => {
 
                 <div className="col-lg-4 ">
                     <div className="form-group d-flex">
-                        <label for="groupBySelect" className="col-form-label text-nowrap">Group by</label>
+                        <label htmlFor="groupBySelect" className="col-form-label text-nowrap">Group by</label>
                         <select id="groupBySelect" className="form-control form-control-sm">
                             <option value="date">date added</option>
                             <option value="name">name</option>
@@ -57,21 +57,21 @@ const HomePage = () => {
 
             <div className="row">
                 <div className="col-lg-10">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <Link class="nav-link active" to="about">All <span class="badge badge-light">4</span></Link>
+                    <ul className="nav nav-pills">
+                        <li className="nav-item">
+                            <Link className="nav-link active" to="about">All <span className="badge badge-light">4</span></Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="about">My favorities <span class="badge badge-light">4</span></Link>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="about">My favorities <span className="badge badge-light">4</span></Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="about">Shared by me <span class="badge badge-light">4</span></Link>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="about">Shared by me <span className="badge badge-light">4</span></Link>
                         </li>
                     </ul>
                 </div>
                 <div className="col-lg-2 text-right">
                     <div className="form-group   d-flex text-right ">
-                        <label for="sortBySelect" className="col-form-label text-nowrap">Sort by</label>
+                        <label htmlFor="sortBySelect" className="col-form-label text-nowrap">Sort by</label>
                         <select id="sortBySelect" className="form-control form-control-sm">
                             <option value="date">date added</option>
                             <option value="name">name</option>
