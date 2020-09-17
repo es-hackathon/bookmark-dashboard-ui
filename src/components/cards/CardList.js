@@ -19,16 +19,12 @@ const CardList = ({ cards, onDeleteClick }) => (
 				return (
 					<tr key={card.id}>
 						<td>
-							<Link to={"/card/" + card.id}>{card.name}</Link>
+							 {card.name} 
 						</td>
 						<td>{card.description}</td>
 						<td>{card.expireDate}</td>
 						<td>
-							<button
-								className="btn btn-outline-danger"
-								onClick={() => onDeleteClick(card)}>
-								Delete
-              				</button>
+							<Link to={"/card/" + card.id} className="btn btn-outline-primary">Edit</Link>
 						</td>
 					</tr>
 				);

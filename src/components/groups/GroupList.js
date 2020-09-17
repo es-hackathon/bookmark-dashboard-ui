@@ -23,12 +23,6 @@ const GroupList = ({ groups, onDeleteClick }) => (
 						<td>{group.isActive ? "Active" : "Not active"}</td>
 						<td>
 							<Link to={"/group/" + group.id} className="btn btn-outline-primary">Edit</Link>
-							{/* <button
-								className="btn btn-outline-danger"
-								onClick={() => onDeleteClick(group)}
-							>
-								Delete
-              				</button> */}
 						</td>
 					</tr>
 				);

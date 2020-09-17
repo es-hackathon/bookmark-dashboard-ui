@@ -14,7 +14,8 @@ const CharacterItem = ({ item }) => {
               <div className="col-sm-10"  > <p className="card-text">{item.description}</p> </div>
               </div>
               <div className="row"  >
-                <div className="col-sm-6"><small className=" card-text-small text-muted">Added 10 Sep 2020</small></div>
+                <div className="col-sm-6"><small className=" card-text-small text-muted">
+                  Added {item.created}</small></div>
                 <div className="col-sm-6 text-right">    <i className="fa fa-share-alt" aria-hidden="true"></i> </div>
               </div>
             </div>

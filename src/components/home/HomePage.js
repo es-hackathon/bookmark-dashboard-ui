@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 import CharacterGrid from "../common/characters/CharacterGrid";
 import axios from 'axios'
+import SelectInput from "../common/SelectInput";
 
 const HomePage = () => {
 
     const [items, setItems] = useState([])
+    const [groups, setGroups] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const [query, setQuery] = useState('')
 
@@ -16,6 +18,11 @@ const HomePage = () => {
                 `${process.env.REACT_APP_API_URL}/cards`
             )
             setItems(result.data)
+
+            const resultGroup = await axios(
+                `${process.env.REACT_APP_API_URL}/groups`
+            )
+            setGroups(resultGroup.data)
             setIsLoading(false)
         }
         fetchItems()
@@ -28,11 +35,22 @@ const HomePage = () => {
 
                 <div className="col-lg-4 ">
                     <div className="form-group d-flex">
-                        <label htmlFor="groupBySelect" className="col-form-label text-nowrap">Group by</label>
-                        <select id="groupBySelect" className="form-control form-control-sm">
+                        {/* <label htmlFor="groupBySelect" className="col-form-label text-nowrap">Group by</label> */}
+                        {/* <select id="groupBySelect" className="form-control form-control-sm">
                             <option value="date">date added</option>
                             <option value="name">name</option>
-                        </select>
+                        </select> */}
+
+                        <SelectInput
+                            name="groupBySelect"
+                            label=""
+                            // value={course.authorId || ""}
+                            defaultOption="Select group"
+                            options={groups.map(g => ({
+                                value: g.id,
+                                text: g.name
+                            }))}
+                        />
                     </div>
                 </div>
                 <div className="col-lg-4 ">
