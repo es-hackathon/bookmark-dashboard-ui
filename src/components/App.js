@@ -10,6 +10,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import GroupsPage from "./groups/GroupsPage";
 import ManageGroupPage from './groups/ManageGroupPage';
+import CardView from "./cardview/cardview";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/cards" component={CardPage} />
         <Route exact path="/card/:id" component={ManageCardPage} />
         <Route exact path="/card" component={ManageCardPage} />
+        <Route exact path="/cardview/:id" component={CardView} />
         <Route exact component={PageNotFound} />
       </Switch>
       <ToastContainer autoClose={3000} hideProgressBar />
