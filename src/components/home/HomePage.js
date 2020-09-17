@@ -13,14 +13,13 @@ const HomePage = () => {
         const fetchItems = async () => {
             setIsLoading(true)
             const result = await axios(
-                `https://www.breakingbadapi.com/api/characters?name=${query}`
+                `${process.env.REACT_APP_API_URL}/cards`
             )
             setItems(result.data)
             setIsLoading(false)
         }
-
         fetchItems()
-    }, [query])
+    }, [])
 
     return (
         <div className="home-page">
@@ -41,10 +40,11 @@ const HomePage = () => {
 
                         <input
                             type="text"
-
                             className="form-control form-control-sm"
                             placeholder="Search bookmark"
-
+                            // onChange={(e)=>handleChange (e.target.value, items)}
+                            onChange={e=>setQuery(e.target.value)}
+                            value ={query}
                         />
                     </div>
                 </div>
@@ -79,7 +79,12 @@ const HomePage = () => {
 
             </div>
             <br />
-            <CharacterGrid isLoading={isLoading} items={items} />
+            <CharacterGrid isLoading={isLoading} items={items.filter(v=> {
+            if(v.name.toLowerCase().indexOf(query) >=0 || v.description.toLowerCase().indexOf(query) >=0 ) {
+                return true;
+            } 
+            return false;
+        })} />
         </div>
     )
 }
