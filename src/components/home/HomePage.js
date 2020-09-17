@@ -35,12 +35,6 @@ const HomePage = () => {
 
                 <div className="col-lg-4 ">
                     <div className="form-group d-flex">
-                        {/* <label htmlFor="groupBySelect" className="col-form-label text-nowrap">Group by</label> */}
-                        {/* <select id="groupBySelect" className="form-control form-control-sm">
-                            <option value="date">date added</option>
-                            <option value="name">name</option>
-                        </select> */}
-
                         <SelectInput
                             name="groupBySelect"
                             label=""

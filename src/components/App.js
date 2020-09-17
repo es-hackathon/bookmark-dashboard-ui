@@ -32,10 +32,10 @@ class App extends Component {
     <div className="container-fluid padding-align ">
       <Header auth={auth} />
       <Switch>
-        <Route exact path="/" auth={auth} component={HomePage} />
+        <Route exact path="/home" auth={auth} component={HomePage} />
         <Route path="/callback"
           render={props => <Callback auth={auth} {...props} />}/>
-        <Route exact auth={auth} path="/about" component={AboutPage} />
+        <Route exact auth={auth} path="/" component={AboutPage} />
         <Route exact auth={auth} path="/groups" component={GroupsPage} />
         <Route exact auth={auth} path="/group/:id" component={ManageGroupPage} />
         <Route exact auth={auth} path="/group" component={ManageGroupPage} />

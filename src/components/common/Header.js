@@ -10,7 +10,7 @@ export default class Header extends Component {
             <ul>
 	    	    {isAuthenticated() && (
                 <li>
-                    <Link to="/" activestyle={activeStyle}>Home</Link>
+                    <Link to="/home" activestyle={activeStyle}>Home</Link>
                 </li>
                 )}
                 {isAuthenticated() && (
@@ -24,7 +24,7 @@ export default class Header extends Component {
                 </li>
                 )} 
                 <li>
-                    <Link to="/about" activestyle={activeStyle}>About</Link>
+                    <Link to="/" activestyle={activeStyle}>About</Link>
                 </li>
 			    <li>
                     <button onClick={isAuthenticated() ? logout : login}>
