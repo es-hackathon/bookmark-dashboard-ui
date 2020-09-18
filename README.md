@@ -38,10 +38,30 @@
 
 * [About the Project](#about-the-project)
 * [Getting Started](#getting-started)
-* [Features available in this project](#Features-available-in-this-project)
-* [Project description](#project-description)
 * [Licence Used](#Licence-Used)
 
 
-Getting Started
+## About the Project
 
+Bookmark-Dashboard which help to bookmark URL based on to group in terms of tribes, feature teams, platforms or application
+
+## Getting Started
+
+### Step 1:
+
+Clone git repository
+
+### Step 2: Run application
+
+```sha
+npm install
+npm start
+
+```
+
+![page](./docs/ui-page.png)
+
+### Step 3: Deploy
+
+npm run build
+firebase deploy
