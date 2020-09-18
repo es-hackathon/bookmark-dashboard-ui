@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import configureStore from "./redux/configureStore";
@@ -14,7 +15,7 @@ ReactDOM.render(
   <React.StrictMode>
     <ReduxProvider store={store} >
       <Router>
-        <App />
+        <Route component={App} />
       </Router>
     </ReduxProvider>
   </React.StrictMode>,
